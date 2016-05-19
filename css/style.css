@@ -1,0 +1,347 @@
+.navbar{
+    background-color:aqua;
+    border: none;
+}
+span{color: black;}
+
+body {
+	font-family:arial;
+	font-size:12px;
+	background: #f6f7f0;
+	margin:0;
+	padding:0;	
+}
+
+.containers {
+	width:642px;
+	height:440px;
+    margin: 0 auto;
+    
+    
+    
+    
+    
+    
+}
+
+
+
+/* HEXAGON STARTS HERE */
+.hex {
+	width:150px;
+	height:86px;
+	background-color: #ccc;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;			
+	-webkit-background-size: auto 173px;							
+	-moz-background-size: auto 173px;							
+	-ms-background-size: auto 173px;							
+	-o-background-size: auto 173px;							
+	position: relative;
+	float:left;
+	margin:25px 5px;
+	text-align:center;
+	zoom:1;
+    
+    
+   
+
+}
+		
+	.hex.hex-gap {
+		margin-left: 86px;
+	}
+	
+	.hex a {
+		display:block;
+		width: 100%;
+		height:100%;
+		text-indent:-9999em;
+		position:absolute;
+		top:0;
+		left:0;
+	}
+
+	.hex .corner-1,
+	.hex .corner-2 {
+		position: absolute;
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+		background: inherit;								
+		z-index:-2;						
+		overflow:hidden;
+		-webkit-backface-visibility: hidden;
+		-moz-backface-visibility: hidden;
+		-ms-backface-visibility: hidden;
+		-o-backface-visibility: hidden;			
+		backface-visibility: hidden;			
+	}
+	
+	.hex .corner-1 {
+		z-index:-1;
+		-webkit-transform: rotate(60deg);
+		-moz-transform: rotate(60deg);
+		-ms-transform: rotate(60deg);
+		-o-transform: rotate(60deg);
+		transform: rotate(60deg);
+	}
+	
+	.hex .corner-2 {
+		-webkit-transform: rotate(-60deg);
+		-moz-transform: rotate(-60deg);
+		-ms-transform: rotate(-60deg);
+		-o-transform: rotate(-60deg);
+		transform: rotate(-60deg);
+	}
+	
+	.hex .corner-1:before,
+	.hex .corner-2:before {
+		width: 173px;
+		height:	173px;
+	  content: '';
+	  position: absolute;
+	  background: inherit;
+	  top:0;
+	  left: 0;
+	  z-index: 1;
+	  background: inherit;
+	  background-repeat:no-repeat;
+		-webkit-backface-visibility: hidden;
+		-moz-backface-visibility: hidden;
+		-ms-backface-visibility: hidden;
+		-o-backface-visibility: hidden;	
+		backface-visibility: hidden;				  
+	}			
+	
+
+	.hex .corner-1:before {
+		-webkit-transform: rotate(-60deg) translate(-87px, 0px);
+		-moz-transform: rotate(-60deg) translate(-87px, 0px);
+		-ms-transform: rotate(-60deg) translate(-87px, 0px);
+		-o-transform: rotate(-60deg) translate(-87px, 0px);
+		transform: rotate(-60deg) translate(-87px, 0px);	
+	  -webkit-transform-origin: 0 0;
+	  -moz-transform-origin: 0 0;
+	  -ms-transform-origin: 0 0;
+	  -o-transform-origin: 0 0;
+	  transform-origin: 0 0;
+	}			
+	
+	.hex .corner-2:before {
+		-webkit-transform: rotate(60deg) translate(-48px, -11px);
+		-moz-transform: rotate(60deg) translate(-48px, -11px);
+		-ms-transform: rotate(60deg) translate(-48px, -11px);
+		-o-transform: rotate(60deg) translate(-48px, -11px);
+		transform: rotate(60deg) translate(-48px, -11px);	
+		bottom:0;
+	}		
+
+@media (min-width: 0px) and (max-width: 767px) {
+    .containers{
+        display: none;
+    }
+    
+}
+#hex {
+	
+	
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: 120px 120px;
+	float:left;
+     width:48%; 
+    height:180px;
+    margin-top: 2%;
+}
+@media (min-width: 767px)  {
+    .navbar{
+        display: none;
+    }
+    
+}
+@media (max-width: 767px){
+    .header{
+        display: none;
+    }
+}
+
+
+
+    
+
+
+.row-fluid div {
+    height: 100px;
+}
+
+
+#logo {
+   
+   background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80% 100%;
+}
+
+#navigator div{
+    text-decoration: underline;
+    text-decoration-color: #1f4056;
+    
+}
+
+#navigator div a {
+    text-decoration: underline;
+    text-align: right;
+    top:50%;
+    padding-top: 30px;
+}
+
+    .header{
+        height:100px;
+        width: 800px;
+        margin: 0 auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100px 100%;
+        margin-bottom: 40px;
+        
+       
+        
+    }
+   .header ul li{
+        float: left;
+        margin-left: 4%;
+        
+        text-decoration: underline;
+        list-style-type: none;
+        padding-top:40px;
+        
+        
+    }
+    .header ul li a{
+        font-family: serif;
+        font-size: 18px;
+        color: #1f4056;
+    }
+    header ul li a:hover{
+        font-size: 20px;
+        color: #9abbcd;
+    }
+    .header-left{
+        margin-right: 80px
+    }
+
+
+/* Про школу */
+
+
+     
+.aboutschool {
+    background-color: #1f4056;
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    
+}
+.aboutschool h1{
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+   
+}
+.aboutschool p{
+    color: white;
+    text-align: center;
+    padding-left: 10% ;
+    padding-right: 10%;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+
+
+
+
+/* Новости школы */
+
+.news {
+    width: 100%;
+    height: 500px;
+    border: 1px solid;
+    
+}
+.news h1{
+    text-align: center;
+    color: white;
+}
+.news .block{
+    
+    float: left;
+    width: 20%;
+    height: auto;
+    margin-left: 10%;
+    margin-top: 30px;
+    color: #1f4056;
+    background: white;
+    box-shadow: 3px 3px;
+}
+.news a .block:hover{
+    
+    width: 21%;
+    height: auto;
+    margin-left: 9%;
+    margin-top: 30px;
+    color: #1f4056;
+    background: white;
+    box-shadow: 4px 4px;
+    
+}
+.news h3{
+    text-align: center;
+}
+.news img{
+    width: 90%;
+    padding-left: 8%;
+    
+}
+.news .block p {
+    text-indent: 20px; /* Отступ первой строки в пикселах */
+    padding: 8px;
+   }
+@media (min-width: 0px) and (max-width: 767px) {
+    
+    .news{
+        height: auto;
+    }
+    .news .block{
+        float: none;
+    width: 80%;
+    height: auto;}
+}
+@media (min-width: 425px) and (max-width: 767px){
+    .news img{
+        height: 40%;
+         padding-left: 8%;
+        float: left;
+        padding-top: 0px;
+    }
+}
+
+
+
+
+
+
+
+/* fooooterrrrrr */
+footer{
+    background: #1f4056;
+    width: 100%;
+    height: 40px;
+    
+}
+footer h6{
+    color: white;
+    padding: 10px;
+}
