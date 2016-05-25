@@ -11,6 +11,7 @@ html {
 }
 body {
   margin: 0;
+ 
 }
 article,
 aside,
@@ -1583,8 +1584,8 @@ pre code {
   overflow-y: scroll;
 }
 .container {
-  padding-right: 15px;
-  padding-left: 15px;
+ 
+  padding: auto;
   margin-right: auto;
   margin-left: auto;
 }
